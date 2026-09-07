@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOX | Follow NOX</title>
+<meta name="theme-color" content="#050505">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    min-height:100vh;
+    background:#030303;
+    color:#fff;
+    font-family:Arial,Tahoma,sans-serif;
+    overflow-x:hidden;
+}
+body:before,body:after{
+    content:"";
+    position:fixed;
+    width:420px;height:420px;
+    background:linear-gradient(135deg,transparent 45%,rgba(255,255,255,.07) 46%,transparent 55%);
+    transform:rotate(18deg);
+    pointer-events:none;
+}
+body:before{top:-170px;left:-170px}
+body:after{bottom:-170px;right:-170px;transform:rotate(198deg)}
+
+.container{
+    width:min(100%,760px);
+    margin:auto;
+    padding:55px 22px 35px;
+    text-align:center;
+}
+.logo{
+    width:210px;
+    height:210px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 8px;
+}
+.tagline{
+    color:#aaa;
+    font-size:13px;
+    letter-spacing:6px;
+    margin-bottom:48px;
+}
+.links{display:flex;flex-direction:column;gap:17px}
+.link{
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    direction:ltr;
+    text-decoration:none;
+    color:#fff;
+    padding:10px 18px;
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:44px;
+    background:linear-gradient(105deg,rgba(28,30,35,.82),rgba(10,11,14,.92));
+    box-shadow:0 8px 25px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04);
+    transition:.2s ease;
+}
+.link:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.22)}
+.icon{
+    width:58px;height:58px;border-radius:50%;
+    display:grid;place-items:center;
+    font-size:26px;flex:none;
+    background:#25272d;
+    margin-right:17px;
+}
+.icon.instagram{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
+.icon.whatsapp{background:#18c653}
+.icon.youtube{background:#ff1b1b}
+.icon.kick{background:#53ff19;color:#000;font-weight:900}
+.info{flex:1;text-align:left}
+.title{font-size:21px;font-weight:700;line-height:1.2}
+.subtitle{font-size:15px;color:#92959d;margin-top:6px}
+.arrow{font-size:35px;color:#eee;font-weight:200;margin-left:6px}
+.footer{
+    margin-top:50px;
+    color:#999;
+    font-size:12px;
+    letter-spacing:5px;
+}
+.socials{
+    margin-top:20px;
+    display:flex;justify-content:center;gap:24px;
+    color:#aaa;font-size:21px;
+}
+@media(max-width:520px){
+    .container{padding-top:32px}
+    .logo{width:180px;height:180px}
+    .tagline{font-size:10px;letter-spacing:4px;margin-bottom:35px}
+    .link{min-height:76px}
+    .title{font-size:18px}
+    .subtitle{font-size:13px}
+    .icon{width:52px;height:52px;font-size:23px}
+}
+</style>
+</head>
+
+<body>
+<main class="container">
+
+    <!-- =========================================================
+         لوگوی NOX:
+         فقط مقدار src خط زیر را با لینک مستقیم لوگوی خودت عوض کن.
+         مثال:
+         src="https://example.com/nox-logo.png"
+         ========================================================= -->
+    <img class="logo"
+         src="https://raw.githubusercontent.com/rohnox/public-assets/refs/heads/main/icons/logotamplit.png"
+         alt="NOX Logo">
+
+    <div class="tagline">IDEAS / CREATE / EVOLVE</div>
+
+    <div class="links">
+
+        <a class="link" href="https://www.instagram.com/roh_ayar/" target="_blank">
+            <div class="icon instagram">◎</div>
+            <div class="info">
+                <div class="title">Instagram</div>
+                <div class="subtitle">@roh_ayar</div>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+        <a class="link" href="https://wa.me/989171476927" target="_blank">
+            <div class="icon whatsapp">◔</div>
+            <div class="info">
+                <div class="title">WhatsApp</div>
+                <div class="subtitle">+98 917 147 6927</div>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+        <a class="link" href="tel:+989171476927">
+            <div class="icon">☎</div>
+            <div class="info">
+                <div class="title">تماس تلفنی</div>
+                <div class="subtitle">+98 917 147 6927</div>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+        <!-- وقتی لینک YouTube آماده شد، href را عوض کن -->
+        <a class="link" href="#" onclick="return false;">
+            <div class="icon youtube">▶</div>
+            <div class="info">
+                <div class="title">YouTube</div>
+                <div class="subtitle">به‌زودی</div>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+        <!-- وقتی لینک Kick آماده شد، href را عوض کن -->
+        <a class="link" href="#" onclick="return false;">
+            <div class="icon kick">K</div>
+            <div class="info">
+                <div class="title">Kick</div>
+                <div class="subtitle">به‌زودی</div>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+        <!-- وقتی دامنه سایت آماده شد، href را عوض کن -->
+        <a class="link" href="#" onclick="return false;">
+            <div class="icon">◎</div>
+            <div class="info">
+                <div class="title">Website</div>
+                <div class="subtitle">به‌زودی</div>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+    </div>
+
+    <div class="footer">FOLLOW NOX</div>
+    <div class="socials">◎　▶　K　◎　◔</div>
+</main>
+</body>
+</html>
